@@ -7,7 +7,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     ICarbonDicomOverlay: typeof import('~icons/carbon/dicom-overlay')['default']
     ICarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
