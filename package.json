@@ -1,12 +1,12 @@
 {
   "name": "vitetail",
-  "description": "Vite Starter template with TailwindCSS + DaisyUI",
-  "version": "1.0.0",
-  "author": "compilekaiten",
-  "license": "MIT",
   "type": "module",
+  "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@7.8.0",
+  "description": "Vite Starter template with TailwindCSS + DaisyUI",
+  "author": "compilekaiten",
+  "license": "MIT",
   "scripts": {
     "build": "vite-ssg build",
     "tbuild": "pnpm lint && pnpm typecheck && vite-ssg build",

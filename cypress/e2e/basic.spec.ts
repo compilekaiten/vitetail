@@ -11,26 +11,11 @@ context('Basic', () => {
       .should('exist')
 
     cy.get('#input')
-      .type('Vitesse{Enter}')
-      .url()
-      .should('eq', 'http://localhost:3333/hi/Vitesse')
+      .type('ViteTail')
+      .get('#go').click()
+      .url().should('eq', 'http://localhost:3333/hi/ViteTail')
 
     cy.contains('[Default Layout]')
-      .should('exist')
-
-    cy.get('[btn]')
-      .click()
-      .url()
-      .should('eq', 'http://localhost:3333/')
-  })
-
-  it('markdown', () => {
-    cy.get('[title="About"]')
-      .click()
-      .url()
-      .should('eq', 'http://localhost:3333/about')
-
-    cy.get('.shiki')
       .should('exist')
   })
 })

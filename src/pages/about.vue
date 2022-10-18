@@ -28,7 +28,7 @@ const router = useRouter()
           <p class="">
             PR's welcome!
           </p>
-          <button class="btn btn-wide btn-outline btn-error" @click="router.back()">
+          <button id="back" class="btn btn-wide btn-outline btn-error" @click="router.back()">
             Back
           </button>
         </div>

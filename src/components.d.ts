@@ -9,7 +9,6 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
-    ICarbonCampsite: typeof import('~icons/carbon/campsite')['default']
     ICarbonDicomOverlay: typeof import('~icons/carbon/dicom-overlay')['default']
     ICarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     ICarbonMoon: typeof import('~icons/carbon/moon')['default']
@@ -17,11 +16,7 @@ declare module '@vue/runtime-core' {
     'IIon:flowerSharp': typeof import('~icons/ion/flower-sharp')['default']
     'ILogos:tailwindcssIcon': typeof import('~icons/logos/tailwindcss-icon')['default']
     'ILogos:vitejs': typeof import('~icons/logos/vitejs')['default']
-    'ILogos:vue': typeof import('~icons/logos/vue')['default']
-    'IMdi:moonWaningCrescent': typeof import('~icons/mdi/moon-waning-crescent')['default']
-    'IMdi:whiteBalanceSunny': typeof import('~icons/mdi/white-balance-sunny')['default']
     'IRi:homeLine': typeof import('~icons/ri/home-line')['default']
-    README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
