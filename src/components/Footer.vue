@@ -1,33 +1,31 @@
 <script setup lang="ts">
-const { t, availableLocales, locale } = useI18n()
+import { themeChange } from 'theme-change'
+import { tryOnMounted } from '@vueuse/core'
 
-const toggleLocales = () => {
-  // change to some real logic
-  const locales = availableLocales
-  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
-}
+tryOnMounted(() => {
+  themeChange(false)
+})
 </script>
 
 <template>
-  <nav text-xl mt-6>
-    <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
-      <div i-carbon-campsite />
+  <div class="container flex flex-row justify-center">
+    <RouterLink class="mx-2" to="/">
+      <i-ri:home-line class="h-6 w-6 hover:text-green-500" />
     </RouterLink>
 
-    <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
-      <div i="carbon-sun dark:carbon-moon" />
-    </button>
+    <label id="theme-toggle" class="swap swap-flip mx-2">
+      <input type="checkbox">
+      <i-carbon-sun class="swap-off h-6 w-6 hover:text-yellow-500" data-set-theme="bumblebee" data-act-class="ACTIVECLASS" aria-label="theme-light-toggle" />
 
-    <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales()">
-      <div i-carbon-language />
-    </a>
+      <i-carbon-moon class="swap-on h-6 w-6 text-black hover:text-stone-500" data-set-theme="halloween" data-act-class="ACTIVECLASS" aria-label="theme-dark-toggle" />
+    </label>
 
-    <RouterLink class="icon-btn mx-2" to="/about" :title="t('button.about')">
-      <div i-carbon-dicom-overlay />
+    <RouterLink class="mx-2" to="/about">
+      <i-carbon-dicom-overlay class="h-6 w-6 hover:text-blue-500" />
     </RouterLink>
 
-    <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
-      <div i-carbon-logo-github />
+    <a class="mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
+      <i-carbon-logo-github class="h-6 w-6 hover:text-purple-500" />
     </a>
-  </nav>
+  </div>
 </template>

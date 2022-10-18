@@ -12,7 +12,7 @@
     "resolveJsonModule": true,
     "noUnusedLocals": true,
     "strictNullChecks": true,
-    "allowJs": true,
+    // "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
       "vitest",
@@ -21,7 +21,8 @@
       "vite-plugin-pages/client",
       "vite-plugin-vue-component-preview/client",
       "vite-plugin-vue-layouts/client",
-      "vite-plugin-pwa/client"
+      "vite-plugin-pwa/client",
+      "unplugin-icons/types/vue"
     ],
     "paths": {
       "~/*": ["src/*"]

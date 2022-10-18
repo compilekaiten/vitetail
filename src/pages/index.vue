@@ -7,52 +7,30 @@ const go = () => {
   if (name)
     router.push(`/hi/${encodeURIComponent(name)}`)
 }
-
-const { t } = useI18n()
 </script>
 
 <template>
-  <div>
-    <div text-4xl>
-      <div i-carbon-campsite inline-block />
+  <div class="container mx-auto grid justify-center pt-10">
+    <div class="flex justify-center gap-3">
+      <i-logos:vitejs class="h-12 w-12" />
+      <i-logos:tailwindcss-icon class="h-12 w-12" />
+      <i-ion:flower-sharp class="h-12 w-12 text-yellow-400" />
     </div>
-    <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
-      </a>
-    </p>
-    <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
-    </p>
+    <div class="mockup-code mt-5 bg-inherit">
+      <pre data-prefix="$"><code>ViteTail</code></pre>
+      <pre data-prefix=">" class="text-warning"><code class="text-warning">Vite + TailwindCSS + DaisyUI</code></pre>
+      <pre data-prefix=">" class="text-success"><code>Inspired by Vitesse</code></pre>
+    </div>
+  </div>
 
-    <div py-4 />
-
-    <input
-      id="input"
-      v-model="name"
-      :placeholder="t('intro.whats-your-name')"
-      :aria-label="t('intro.whats-your-name')"
-      type="text"
-      autocomplete="false"
-      p="x4 y2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
-      @keydown.enter="go"
+  <div class="container mx-auto grid justify-center py-5">
+    <input v-model="name" type="text" placeholder="What's your name?" class="input input-bordered w-full mb-5">
+    <button
+      class="btn btn-wide btn-success" :disabled="!name"
+      @click="go"
     >
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
-
-    <div>
-      <button
-        btn m-3 text-sm
-        :disabled="!name"
-        @click="go"
-      >
-        {{ t('button.go') }}
-      </button>
-    </div>
+      GO
+    </button>
   </div>
 </template>
 
