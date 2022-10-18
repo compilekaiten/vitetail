@@ -1,16 +1,20 @@
-<p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/154486817-f86b8f20-5463-4122-b6e9-930622e757f2.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
-</p>
+- - - -
+
+<table cellpadding="0" align='center'>
+  <tr style="padding: 0">
+    <td valign="top"><img height="50" src="https://api.iconify.design/logos:vitejs.svg?color=%23888888"/></td>
+    <td valign="top"><img height="50" src="https://api.iconify.design/logos:tailwindcss-icon.svg?color=%23888888"/></td>
+  </tr>
+</table>
 
 <p align='center'>
 <b>ViteTail</b> is a Vue + Vite + TailwindCSS + DaisyUI template, heavily based on Vitesse.
 </p>
-<p align='center'>Change TailwindCSS component libraries quickly</p>
 
 <br>
 
 <p align='center'>
-<a href="https://vitesse.netlify.app/">Live Demo</a>
+<a href="https://vitetail.netlify.app/">Live Demo</a>
 </p>
 
 - - - -
@@ -60,6 +64,8 @@
 ### UI Frameworks
 
 - [TailwindCSS](https://tailwindcss.com/)
+  - [@TailwindCSS/Aspect-Ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
+  - [@TailwindCSS/Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 - [TailwindCSS-Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
 - [DaisyUI](https://daisyui.com/) - Easily change to whatever component library you want
 - [Theme-Change](https://github.com/saadeghi/theme-change) - Fast CSS Theme changing

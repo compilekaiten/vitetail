@@ -9,11 +9,10 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    require('daisyui'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
     require('tailwind-scrollbar'),
-    require('daisyui'),
   ],
   daisyui: {
     themes: ['halloween', 'bumblebee'],
