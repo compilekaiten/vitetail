@@ -10,9 +10,10 @@ context('Basic', () => {
     cy.contains('[Home Layout]')
       .should('exist')
 
-    cy.get('#input')
+    cy.get('#input').should('be.visible').click()
       .type('ViteTail')
-      .get('#go').click()
+
+    cy.get('#go').click()
       .url().should('eq', 'http://localhost:3333/hi/ViteTail')
 
     cy.contains('[Default Layout]')
