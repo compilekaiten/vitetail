@@ -3,8 +3,7 @@
 <br>
 
 <div align="center">
-  <img height="50" src="https://api.iconify.design/logos:vitejs.svg?color=%23888888"/>
-  <img height="50" src="https://api.iconify.design/logos:tailwindcss-icon.svg?color=%23888888"/>
+<img src="images/../.github/images/vt.png" height="100" />
 </div>
 
 <p align='center'>
@@ -19,9 +18,13 @@ Almost all the great features of Vitesse, but with your favorite CSS framework!
 ViteTail comes with DaisyUI out of the box, for great and easy to use components. Feel free to switch to any component library you want.
 </p>
 
+<br>
+
 <p align='center'>
 <a href="https://vitetail.netlify.app/">Live Demo</a>
 </p>
+
+<br>
 
 - - - -
 ## Features
