@@ -64,16 +64,23 @@ export default defineConfig({
       ],
     }),
 
-    Icons({ compiler: 'vue3', autoInstall: true }),
+    // https://github.com/antfu/unplugin-icons
+    Icons({
+      compiler: 'vue3',
+      autoInstall: true,
+    }),
 
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
+      devOptions: {
+        enabled: false,
+      },
+      includeAssets: ['favicon.ico'],
       manifest: {
         name: 'ViteTail',
         short_name: 'ViteTail',
-        theme_color: '#ffffff',
+        theme_color: '#141824',
         icons: [
           {
             src: '/pwa-192x192.png',

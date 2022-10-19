@@ -1,17 +1,23 @@
 - - - -
 
-<table cellpadding="0" align='center'>
-  <tr style="padding: 0">
-    <td valign="top"><img height="50" src="https://api.iconify.design/logos:vitejs.svg?color=%23888888"/></td>
-    <td valign="top"><img height="50" src="https://api.iconify.design/logos:tailwindcss-icon.svg?color=%23888888"/></td>
-  </tr>
-</table>
+<br>
+
+<div align="center">
+  <img height="50" src="https://api.iconify.design/logos:vitejs.svg?color=%23888888"/>
+  <img height="50" src="https://api.iconify.design/logos:tailwindcss-icon.svg?color=%23888888"/>
+</div>
 
 <p align='center'>
 <b>ViteTail</b> is a Vue + Vite + TailwindCSS + DaisyUI template, heavily based on Vitesse.
 </p>
 
-<br>
+<p align='center'>
+Almost all the great features of Vitesse, but with your favorite CSS framework!
+</p>
+
+<p align='center'>
+ViteTail comes with DaisyUI out of the box, for great and easy to use components. Feel free to switch to any component library you want.
+</p>
 
 <p align='center'>
 <a href="https://vitetail.netlify.app/">Live Demo</a>
@@ -112,9 +118,6 @@
   - [TailwindCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 ## Try it now!
-
-> Vitesse requires Node >=14.18
-
 ### GitHub Template
 
 [Create a repo from this template on GitHub](https://github.com/compilekaiten/ViteTail/generate).
@@ -146,16 +149,22 @@ And, enjoy :)
 
 ### Development
 
-Just run and visit http://localhost:3333
+Visit http://localhost:3333 to view the project
 
 ```bash
 pnpm open # To open automatically
 pnpm dev # To run the dev server
 ```
 
+Update Dependencies
+
+```bash
+pnpm dep # Runs Taze to update Major and Minor dependencies
+```
+
 ### Build
 
-To build the App, run
+To build your App, run
 
 ```bash
 pnpm build # Build for Production
@@ -163,3 +172,7 @@ pnpm tbuild # Lint and Typecheck before building
 ```
 
 And you will see the generated file in `dist` that are ready to be served.
+
+### Deploy on Netlify
+
+Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.

@@ -19,7 +19,7 @@
     "test:e2e": "cypress open",
     "test:unit": "vitest",
     "typecheck": "vue-tsc --noEmit",
-    "u": "taze major -IR"
+    "dep": "taze major -IR"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
