@@ -24,7 +24,7 @@ const go = () => {
   </div>
 
   <div class="container mx-auto grid justify-center py-5">
-    <input id="input" v-model="name" type="text" placeholder="What's your name?" class="input input-bordered w-full mb-5">
+    <input id="input" v-model="name" type="text" placeholder="What's your name?" class="input input-bordered w-full mb-5 focus:input-info" autocomplete="off">
     <button
       id="go"
       class="btn btn-wide btn-success" :disabled="!name"

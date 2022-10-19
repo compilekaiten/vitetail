@@ -9,10 +9,10 @@ watchEffect(() => {
 </script>
 
 <template>
-  <div class="container mx-auto flex justify-center">
-    Hello {{ props.name }}
+  <div class="container mx-auto grid grid-rows-2 justify-center py-10">
+    <span class="text-lg text-center">Hello <span class="animate-pulse">{{ props.name }}!</span></span>
 
-    <button class="btn btn-square btn-error" @click="router.back()">
+    <button class="btn btn-wide btn-error" @click="router.back()">
       Back
     </button>
   </div>
