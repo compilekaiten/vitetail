@@ -12,7 +12,7 @@ const go = () => {
 <template>
   <div class="container mx-auto grid justify-center pt-10">
     <div class="grid grid-rows-1 justify-center">
-      <img src="/public/pwa-512x512.png" alt="ViteTail Logo" width="100" heigh="100">
+      <img src="/pwa-512x512.png" alt="ViteTail Logo" width="100" heigh="100">
     </div>
 
     <div class="flex flex-row justify-between pt-5">
@@ -21,9 +21,9 @@ const go = () => {
       <i-fxemoji:blossom class="h-12 w-12" />
     </div>
 
-    <div class="mockup-code mt-5 bg-inherit">
+    <div class="mockup-code mt-5 bg-base-200">
       <pre data-prefix="$"><code>ViteTail</code></pre>
-      <pre data-prefix=">" class="text-warning"><code class="text-warning">Vite + TailwindCSS + DaisyUI</code></pre>
+      <pre data-prefix=">" class="text-error"><code class="text-error">Vite + TailwindCSS + DaisyUI</code></pre>
       <pre data-prefix=">" class="text-success"><code>Inspired by Vitesse</code></pre>
     </div>
   </div>

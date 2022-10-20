@@ -4,7 +4,7 @@ const router = useRouter()
 
 <template>
   <div class="flex justify-center">
-    <div class="hero min-h-screen bg-base-200">
+    <div class="hero min-h-screen">
       <div class="hero-content text-center">
         <div class="max-w-md space-y-3">
           <h1 class="text-5xl font-bold pb-5">
@@ -23,7 +23,7 @@ const router = useRouter()
             Including <a class="link" href="https://github.com/adoxography/tailwind-scrollbar">TailwindCSS Scrollbars</a> and <a class="link" href="https://github.com/saadeghi/theme-change">Theme-Change</a>.
           </p>
           <p class="leading-relaxed text-left">
-            Check out the repo <a class="link link-accent" href="https://github.com/compilekaiten/ViteTail">here</a>, and give it a Star if you like it.
+            Check out the repo <a class="link link-primary" href="https://github.com/compilekaiten/ViteTail">here</a>, and give it a Star if you like it.
           </p>
           <p class="">
             PR's welcome!
@@ -36,3 +36,9 @@ const router = useRouter()
     </div>
   </div>
 </template>
+
+<route lang="yaml">
+meta:
+  layout: home
+</route>
+

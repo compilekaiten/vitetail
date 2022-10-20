@@ -1,7 +1,7 @@
 <template>
   <main>
     <RouterView />
-    <Footer class="container mx-auto justify-center" />
+    <Footer />
     <div class="mt-5 mx-auto text-center">
       [Home Layout]
     </div>

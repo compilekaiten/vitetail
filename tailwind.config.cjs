@@ -15,6 +15,5 @@ module.exports = {
     require('tailwind-scrollbar'),
   ],
   daisyui: {
-    themes: ['halloween', 'bumblebee'],
   },
 }
