@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     ICarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     ICarbonMoon: typeof import('~icons/carbon/moon')['default']
     ICarbonSun: typeof import('~icons/carbon/sun')['default']
+    'IFxemoji:blossom': typeof import('~icons/fxemoji/blossom')['default']
     'IIon:flowerSharp': typeof import('~icons/ion/flower-sharp')['default']
     'ILogos:tailwindcssIcon': typeof import('~icons/logos/tailwindcss-icon')['default']
     'ILogos:vitejs': typeof import('~icons/logos/vitejs')['default']

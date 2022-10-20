@@ -11,11 +11,16 @@ const go = () => {
 
 <template>
   <div class="container mx-auto grid justify-center pt-10">
-    <div class="flex justify-center gap-3">
-      <i-logos:vitejs class="h-12 w-12" />
-      <i-logos:tailwindcss-icon class="h-12 w-12" />
-      <i-ion:flower-sharp class="h-12 w-12 text-yellow-400" />
+    <div class="grid grid-rows-1 justify-center">
+      <img src="/public/pwa-512x512.png" alt="ViteTail Logo" width="100" heigh="100">
     </div>
+
+    <div class="flex flex-row justify-between pt-5">
+      <i-logos:vitejs class="h-12 w-12" />
+      <i-logos:tailwindcss-icon class="h-14 w-14" />
+      <i-fxemoji:blossom class="h-12 w-12" />
+    </div>
+
     <div class="mockup-code mt-5 bg-inherit">
       <pre data-prefix="$"><code>ViteTail</code></pre>
       <pre data-prefix=">" class="text-warning"><code class="text-warning">Vite + TailwindCSS + DaisyUI</code></pre>
