@@ -6,6 +6,8 @@
 <img src="images/../.github/images/vt.png" height="100" />
 </div>
 
+<br>
+
 <p align='center'>
 <b>ViteTail</b> is a Vue + Vite + TailwindCSS + DaisyUI template, heavily based on Vitesse.
 </p>
@@ -15,7 +17,7 @@ Almost all the great features of Vitesse, but with your favorite CSS framework!
 </p>
 
 <p align='center'>
-ViteTail comes with DaisyUI out of the box, for great and easy to use components. Feel free to switch to any component library you want.
+ViteTail comes with DaisyUI out of the box. Feel free to switch to any component library you want.
 </p>
 
 <br>
@@ -62,6 +64,7 @@ ViteTail comes with DaisyUI out of the box, for great and easy to use components
 - ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest), E2E Testing with [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
 
 - - - -
+
 ## Features Removed
 -  I18n
 -  Markdown Support
@@ -179,3 +182,5 @@ And you will see the generated file in `dist` that are ready to be served.
 ### Deploy on Netlify
 
 Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
+
+#### PR's are very welcome
