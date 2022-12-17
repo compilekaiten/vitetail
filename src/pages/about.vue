@@ -41,4 +41,3 @@ const router = useRouter()
 meta:
   layout: home
 </route>
-
